@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube animation</title>
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+    <div id="intro-screen">
+        <div class="load1"></div>
+     <div class="load2"></div>
+     <div class="load3"></div>
+     <h1>created by Eniola Henry</h1>
+            </div>
+            <div id="main-content">
+    <div class="y">
+        <div>
+            <span style="--t:0"></span>
+            <span style="--t:1"></span>
+            <span style="--t:2"></span>
+            <span style="--t:3"></span>
+            </div>  
+     </div>
+     <div class="e">
+        <div>
+        <span style="--i:0"></span>
+        <span style="--i:1"></span>
+        <span style="--i:2"></span>
+        <span style="--i:3"></span>
+        </div>
+     </div>
+     </div>
+     <script>
+        function showMainContent() {
+const introScreen = document.getElementById("intro-screen");
+const mainContent = document.getElementById("main-content");
+
+introScreen.style.display = "none";
+mainContent.style.display = "block";
+}
+setTimeout(showMainContent, 3200);
+</script>
+</body>
+</html>
